@@ -32,9 +32,9 @@ dependencies:
   file_picker: 5.0.1
   flutter_colorpicker:
   cupertino_icons: ^1.0.2
-  spark:
+  ember:
     git: 
-      url: https://github.com/Knightro63/spark.git
+      url: https://github.com/Knightro63/ember.git
 
 dev_dependencies:
   flutter_test:
