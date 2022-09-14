@@ -6,7 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'src/styles/lsi_functions.dart';
-import 'package:spark/spark.dart';
+import 'package:ember/ember.dart';
 
 import 'ui/tileset.dart';
 import 'ui/levelModifers.dart';
