@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'globals.dart';
-import '../styles/css.dart' as lsi;
-import '../styles/css.dart';
+import 'package:css/css.dart';
 
 class EnterTextFormField extends StatelessWidget{
   const EnterTextFormField({
@@ -69,7 +66,7 @@ class EnterTextFormField extends StatelessWidget{
         onEditingComplete:onEditingComplete,
         inputFormatters: inputFormatters,
         controller: controller,
-        style: (textStyle == null)?Theme.of(context).primaryTextTheme.bodyText2:textStyle,
+        style: (textStyle == null)?Theme.of(context).primaryTextTheme.bodyMedium:textStyle,
         decoration: InputDecoration(
           isDense: true,
           //labelText: label,
@@ -97,8 +94,8 @@ class LSIWidgets{
     Key? key,
     bool iconFront = false,
     Widget? icon,
-    Color buttonColor = lsi.lightBlue,
-    Color textColor = lsi.darkGrey,
+    Color buttonColor = lightBlue,
+    Color textColor = darkGrey,
     required String text,
     Function()? onTap,
     String fontFamily = 'Klavika Bold',

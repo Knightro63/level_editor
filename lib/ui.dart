@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
-import 'dart:typed_data';
+
+import 'package:css/css.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -38,11 +39,11 @@ class _UIPageState extends State<UIScreen> {
 
   late Grid grid;
   Grid getGrid(){
-    Grid _grid = Grid();
+    Grid grid = Grid();
     setState(() {
-      _grid = levelScene.levelInfo[levelScene.selectedLevel].grid;
+      grid = levelScene.levelInfo[levelScene.selectedLevel].grid;
     });
-    return _grid;
+    return grid;
   }
 
   @override
@@ -68,6 +69,7 @@ class _UIPageState extends State<UIScreen> {
     else if(image != null){
       return file.writeAsBytes(image);
     }
+    return null;
   }
   void setInfo(String newInfo){
     setState(() {
@@ -301,7 +303,7 @@ class _UIPageState extends State<UIScreen> {
     deviceHeight = MediaQuery.of(context).size.height-safePadding-25;
 
     return MaterialApp(
-      theme: ThemeData.dark(),
+      theme: CSS.darkTheme,
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(

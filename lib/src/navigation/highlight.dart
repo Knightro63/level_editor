@@ -69,7 +69,7 @@ class HighLight{
     _text = text;
     findButton();
     _overlayEntry = _overlayEntryBuilder();
-    Overlay.of(_context)!.insert(_overlayEntry);
+    Overlay.of(_context).insert(_overlayEntry);
     isMenuOpen = !isMenuOpen;
   }
 }

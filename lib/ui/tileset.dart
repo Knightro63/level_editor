@@ -233,7 +233,7 @@ class _TilesetState extends State<Tileset>{
                   spriteScene.addCollision();
                 },
                 textColor: Theme.of(context).cardColor,
-                buttonColor: Theme.of(context).primaryTextTheme.bodyText2!.color!,
+                buttonColor: Theme.of(context).primaryTextTheme.bodyMedium!.color!,
                 height: 30,
                 radius: 30/2,
                 width: 300/3-10,
@@ -244,7 +244,7 @@ class _TilesetState extends State<Tileset>{
                   spriteScene.removeSelectedCollision();
                 },
                 textColor: Theme.of(context).cardColor,
-                buttonColor: Theme.of(context).primaryTextTheme.bodyText2!.color!,
+                buttonColor: Theme.of(context).primaryTextTheme.bodyMedium!.color!,
                 height: 30,
                 radius: 30/2,
                 width: 300/3-10,
@@ -258,7 +258,7 @@ class _TilesetState extends State<Tileset>{
                   Navigator.of(context).pop();
                 },
                 textColor: Theme.of(context).cardColor,
-                buttonColor: Theme.of(context).primaryTextTheme.bodyText2!.color!,
+                buttonColor: Theme.of(context).primaryTextTheme.bodyMedium!.color!,
                 height: 30,
                 radius: 30/2,
                 width: 300/3-10,
@@ -358,7 +358,7 @@ class _TilesetState extends State<Tileset>{
                   Navigator.of(context).pop();
                 },
                 textColor: Theme.of(context).cardColor,
-                buttonColor: Theme.of(context).primaryTextTheme.bodyText2!.color!,
+                buttonColor: Theme.of(context).primaryTextTheme.bodyMedium!.color!,
                 height: 30,
                 radius: 30/2,
                 width: 300/3-10,
@@ -448,7 +448,7 @@ class _TilesetState extends State<Tileset>{
                   spriteScene.seperateSprites();
                 },
                 textColor: Theme.of(context).cardColor,
-                buttonColor: Theme.of(context).primaryTextTheme.bodyText2!.color!,
+                buttonColor: Theme.of(context).primaryTextTheme.bodyMedium!.color!,
                 height: 30,
                 radius: 30/2,
                 width: 300/3-10,
@@ -463,7 +463,7 @@ class _TilesetState extends State<Tileset>{
                   spriteScene.combineSprites(com);
                 },
                 textColor: Theme.of(context).cardColor,
-                buttonColor: Theme.of(context).primaryTextTheme.bodyText2!.color!,
+                buttonColor: Theme.of(context).primaryTextTheme.bodyMedium!.color!,
                 height: 30,
                 radius: 30/2,
                 width: 300/3-10,
@@ -477,7 +477,7 @@ class _TilesetState extends State<Tileset>{
                   Navigator.of(context).pop();
                 },
                 textColor: Theme.of(context).cardColor,
-                buttonColor: Theme.of(context).primaryTextTheme.bodyText2!.color!,
+                buttonColor: Theme.of(context).primaryTextTheme.bodyMedium!.color!,
                 height: 30,
                 radius: 30/2,
                 width: 300/3-10,
@@ -551,7 +551,7 @@ class _TilesetState extends State<Tileset>{
             margin: const EdgeInsets.only(left:15, right: 5, top:10),
             padding: const EdgeInsets.only(left:5, right: 5),
             decoration: BoxDecoration(
-              color: widget.scene.levelInfo[widget.scene.selectedLevel].selectedTileLayer != i?Theme.of(context).cardColor:Theme.of(context).accentColor,
+              color: widget.scene.levelInfo[widget.scene.selectedLevel].selectedTileLayer != i?Theme.of(context).cardColor:Theme.of(context).secondaryHeaderColor,
               borderRadius: const BorderRadius.all(Radius.circular(2)),
               boxShadow: [BoxShadow(
                 color: Theme.of(context).shadowColor,
@@ -928,7 +928,7 @@ class _TilesetState extends State<Tileset>{
           margin: const EdgeInsets.only(left:15, right: 5, top:5),
           padding: const EdgeInsets.only(left:5, right: 5),
           decoration: BoxDecoration(
-            color: !selected?Theme.of(context).cardColor:Theme.of(context).accentColor,
+            color: !selected?Theme.of(context).cardColor:Theme.of(context).secondaryHeaderColor,
             borderRadius: const BorderRadius.all(Radius.circular(2)),
             boxShadow: [BoxShadow(
               color: Theme.of(context).shadowColor,
@@ -1091,7 +1091,7 @@ class _TilesetState extends State<Tileset>{
               alignment: Alignment.center,
               
               decoration: BoxDecoration(
-                color: tileScene.selectedTileSet == i?Theme.of(context).accentColor:Theme.of(context).cardColor,
+                color: tileScene.selectedTileSet == i?Theme.of(context).secondaryHeaderColor:Theme.of(context).cardColor,
                 borderRadius: const BorderRadius.all(Radius.circular(5)),
                 boxShadow: [BoxShadow(
                   color: Theme.of(context).shadowColor,
@@ -1182,7 +1182,7 @@ class _TilesetState extends State<Tileset>{
               width:  size.width,
               height: size.height,
               decoration: BoxDecoration(
-                border: Border.all(color: selectedAnimation == i ?Theme.of(context).accentColor:Theme.of(context).cardColor,width: 2)
+                border: Border.all(color: selectedAnimation == i ?Theme.of(context).secondaryHeaderColor:Theme.of(context).cardColor,width: 2)
               ),
             ),
           ],)
@@ -1382,7 +1382,7 @@ class _TilesetState extends State<Tileset>{
               padding: const EdgeInsets.all(2),
               decoration: BoxDecoration(
                 //color: Theme.of(context).accentColor,
-                border: Border.all(color: selectedObject == i?Theme.of(context).accentColor:Colors.grey,width: 2)
+                border: Border.all(color: selectedObject == i?Theme.of(context).secondaryHeaderColor:Colors.grey,width: 2)
               ),
               child: Stack(children:[
                 CustomPaint(
@@ -1539,7 +1539,7 @@ class _TilesetState extends State<Tileset>{
               alignment: Alignment.center,
               
               decoration: BoxDecoration(
-                color:selectedDropDown == objectDropDown[i].value?Theme.of(context).accentColor:Theme.of(context).cardColor,
+                color:selectedDropDown == objectDropDown[i].value?Theme.of(context).secondaryHeaderColor:Theme.of(context).cardColor,
                 borderRadius: const BorderRadius.all(Radius.circular(5)),
                 boxShadow: [BoxShadow(
                   color: Theme.of(context).shadowColor,
@@ -1591,7 +1591,7 @@ class _TilesetState extends State<Tileset>{
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 2,
-                    color: selected == i?Theme.of(context).accentColor:Colors.grey,
+                    color: selected == i?Theme.of(context).secondaryHeaderColor:Colors.grey,
                   )
                 ),
                 child: Stack(children: [
@@ -2047,7 +2047,7 @@ class SpritePainter extends CustomPainter {
     canvas.drawImageRect(sprite, src, dst, Paint()..color = Colors.green);
   }
   @override
-  bool shouldRepaint(SpritePainter old){
+  bool shouldRepaint(SpritePainter oldDelegate){
     return true;
   }
 }

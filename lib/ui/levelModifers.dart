@@ -94,7 +94,7 @@ class _LevelModifersState extends State<LevelModifers>{
               icon,
               key: key,
               size: 15,
-              color: _brush == brush? Theme.of(context).accentColor:null,
+              color: _brush == brush? Theme.of(context).secondaryHeaderColor:null,
             ),
           )
       )
@@ -134,7 +134,7 @@ class _LevelModifersState extends State<LevelModifers>{
               margin: const EdgeInsets.fromLTRB(5, 5, 0, 0),
               padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
               decoration: BoxDecoration(
-                color: (hovering != i.toString() && widget.scene.selectedLevel != i)?Theme.of(context).cardColor:Theme.of(context).accentColor,
+                color: (hovering != i.toString() && widget.scene.selectedLevel != i)?Theme.of(context).cardColor:Theme.of(context).secondaryHeaderColor,
                 borderRadius: const BorderRadius.only(topLeft:Radius.circular(5),topRight:Radius.circular(5)),
                 //border: border
               ),
@@ -144,7 +144,7 @@ class _LevelModifersState extends State<LevelModifers>{
                   width: 80,
                   height: 25,
                   maxLines: 1,
-                  color: (hovering != i.toString() && widget.scene.selectedLevel != i)?Theme.of(context).cardColor:Theme.of(context).accentColor,
+                  color: (hovering != i.toString() && widget.scene.selectedLevel != i)?Theme.of(context).cardColor:Theme.of(context).secondaryHeaderColor,
                   onChanged: (val){
                     if(val != ''){
                       nameChange(i);
@@ -216,7 +216,7 @@ class _LevelModifersState extends State<LevelModifers>{
             margin: const EdgeInsets.fromLTRB(5, 5, 0, 0),
             padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
             decoration: BoxDecoration(
-              color: (hovering != 'add')?Colors.white.withAlpha(50):Theme.of(context).accentColor,
+              color: (hovering != 'add')?Colors.white.withAlpha(50):Theme.of(context).secondaryHeaderColor,
               borderRadius: const BorderRadius.only(topLeft:Radius.circular(5),topRight:Radius.circular(5)),
               //border: border
             ),

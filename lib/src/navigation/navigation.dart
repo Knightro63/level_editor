@@ -44,7 +44,7 @@ class NavDropDown{
     findButton();
     _overlayEntry = _overlayEntryBuilder();
     if(!isOpen){
-      Overlay.of(context)!.insert(_overlayEntry!);
+      Overlay.of(context).insert(_overlayEntry!);
       isOpen = !isOpen;
     }
   }
